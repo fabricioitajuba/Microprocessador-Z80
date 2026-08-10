@@ -1,0 +1,7 @@
+/MODELS
+2716.mdf
+27010.mdf
+
+/LIBRARY
+2716_27c010_logic_state_mini.IDX
+2716_27c010_logic_state_mini.LIB
