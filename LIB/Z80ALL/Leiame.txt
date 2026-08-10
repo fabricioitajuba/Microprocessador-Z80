@@ -1,7 +1,0 @@
-http://www.nedopc.org/forum/viewtopic.php?p=121096
-
-Para salvar na pasta LIBRARY, habilite "Ítens ocultos"
-C:\ProgramData\Labcenter Electronics\Proteus 8 Professional\LIBRARY
-
-Para salvar na pasta MODELS
-C:\ProgramData\Labcenter Electronics\Proteus 8 Professional\MODELS
