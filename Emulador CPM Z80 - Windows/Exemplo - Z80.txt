@@ -1,0 +1,43 @@
+Editanto e compilando programas em assembly do Z80
+
+A>ed ex02.z80
+
+NEW FILE
+     : *i
+    1:  ; Simple CP/M Z80 "Hello, World!"
+    2:  ; Assemble using a Z80 assembler (like M80 or Z80ASM)
+    3:  ; status: funcionou
+    4:
+    5:          ORG     100H    ; CP/M transient program area (TPA) entry point
+    6:
+    7:  BEGIN:  LD      DE, MSG ; Point DE to message string
+    8:          LD      C, 9    ; BDOS function 9: print string
+    9:          CALL    5       ; Call CP/M BDOS entry point
+   10:          RET             ; Return to CP/M console
+   11:
+   12:  MSG:    DEFB    'Hello, CP/M World!', 0DH, 0AH, '$'
+   13:
+   14:          END
+   15:
+     : *e
+
+A>z80asm ex02
+
+Z80ASM Copyright (C) 1983-86 by SLR Systems Rel. 1.32 #RunCPM
+
+ EX02
+End of file Pass 1
+ 0 Error(s) Detected.
+ 30 Absolute Bytes. 2 Symbols Detected.
+
+
+A>dir
+A: DEBUG    COM : DUMP     COM : ED       COM : EXIT     COM
+A: INIT     COM : PIP      COM : R2       COM : SDIR     COM
+A: STAT     COM : SUBMIT   COM : VIEW     COM : W2       COM
+A: XSUB     COM : Z80ASM   COM : ZSID     COM : ZTRAN    COM
+A: EX02     BAK : EX02     Z80 : EX02     COM
+A>
+
+
+ex02.z80
